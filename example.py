@@ -2,13 +2,13 @@
 # Author: Nathan Strong
 # Date: Nov 1, 2021
 # Description: This serves as an example of how to use the DiscordBot library.
-# You can delete it if you want.
+# You can delete it if you want, it doesn't do anything else.
 
 import os
 import discord
-import module as discord_base # This would be replaced with whatever replit wants for importing from another repl.
+import discordbase # This would be replaced with whatever replit wants for importing from another repl.
 
-class ExampleBot(discord_base.BaseBot):
+class ExampleBot(discordbase.BaseBot):
     # The [library_name].command decorator is the way in which you declare commands.    You can pass it the following arguments:
 
     # name (required): The command's name, what you would use to call it
@@ -23,7 +23,7 @@ class ExampleBot(discord_base.BaseBot):
 
     # perms_needed: Should be a Perms variable (like Perms.admin), depending on who should be able to run the command. 
     # Defaults to Perms.none
-    @discord_base.command(name="ping", description="Sends \"Pong!\"")
+    @discordbase.command(name="ping", description="Sends \"Pong!\"")
     async def ping(self, args, ctx):
         await ctx.channel.send("Pong!")
     
