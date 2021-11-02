@@ -2,6 +2,7 @@
 # Author: Nathan Strong
 # Date: Nov 1, 2021
 # Description: This serves as an example of how to use the DiscordBot library.
+# You can delete it if you want.
 
 import os
 import discord
